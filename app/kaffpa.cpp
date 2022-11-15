@@ -8,7 +8,6 @@
 #include <argtable3.h>
 #include <iostream>
 #include <math.h>
-#include <regex.h>
 #include <sstream>
 #include <stdio.h>
 #include <string.h>
@@ -20,7 +19,6 @@
 #include "graph_io.h"
 #include "macros_assertions.h"
 #include "mapping/mapping_algorithms.h"
-#include "mmap_graph_io.h"
 #include "parse_parameters.h"
 #include "partition/graph_partitioner.h"
 #include "partition/partition_config.h"
@@ -60,7 +58,7 @@ int main(int argn, char **argv) {
 
         timer t;
         if (partition_config.use_mmap_io) {
-                kahip::mmap_io::graph_from_metis_file(G, graph_filename);
+                std::cout << "MMAP not supported\n"; 
         } else {
                 graph_io::readGraphWeighted(G, graph_filename);
         }

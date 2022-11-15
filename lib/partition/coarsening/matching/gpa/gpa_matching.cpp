@@ -165,7 +165,7 @@ void gpa_matching::extract_paths_apply_matching(graph_access & G,
         forall_nodes(G, n) {
                 const path & p = pathset.get_path(n);
 
-                if(not p.is_active()) {
+                if(!p.is_active()) {
                         continue;
                 }
                 if(p.get_tail() != n) {

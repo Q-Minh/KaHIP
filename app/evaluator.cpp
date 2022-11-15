@@ -6,8 +6,7 @@
  *****************************************************************************/
 
 #include <argtable3.h>
-#include <regex.h>
-#include <string.h> 
+#include <string> 
 
 #include "data_structure/graph_access.h"
 #include "graph_io.h"

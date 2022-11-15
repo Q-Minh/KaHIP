@@ -8,7 +8,6 @@
 #ifndef COMPLETE_BOUNDARY_URZZFDEI
 #define COMPLETE_BOUNDARY_URZZFDEI
 
-#include <execinfo.h>
 #include <unordered_map>
 #include <utility>
 
