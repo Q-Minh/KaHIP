@@ -1,0 +1,8 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+find_dependency(OpenMP)
+
+if (NOT TARGET kahip::kahip)
+    include("${CMAKE_CURRENT_LIST_DIR}/kahipTargets.cmake")
+endif()
